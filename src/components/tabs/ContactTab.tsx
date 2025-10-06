@@ -5,7 +5,7 @@ import { profile } from "@/data/profile";
 
 export default function ContactTab() {
   return (
-    <div className="bg-blue-50 p-4 rounded-b">
+    <div className="border-1 p-4 rounded-b">
       <section className="flex flex-col gap-2">
         <div className="flex items-center gap-2">
           <strong>Email:</strong>

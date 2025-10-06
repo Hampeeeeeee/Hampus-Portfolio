@@ -2,9 +2,9 @@ import { profile } from "@/data/profile";
 
 export default function ProjectTab() {
   return (
-    <div className="bg-blue-50 p-4 rounded-b">
+    <div className="border-1 p-4 rounded-b">
         {profile.projects.map((project, index) => (
-            <div key={index} className="bg-white p-4 rounded shadow-md hover:shadow-lg transition-shadow">
+            <div key={index} className="bg-gray-200 p-4 rounded shadow-md hover:shadow-lg transition-shadow m-2">
                 <h3 className="text-lg font-semibold text-blue-600">{project.title}</h3>
                 <p className="text-gray-700">{project.description}</p>
                 {project.img && (
