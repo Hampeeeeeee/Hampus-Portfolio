@@ -6,9 +6,7 @@ export function MailtoButton() {
       <Button
         variant="default"
         className="
-        flex justify-between rounded-md py-4 px-6
-      bg-gray-100 text-black border border-blue-200 shadow-sm cursor-pointer
-        hover:bg-transparent hover:text-primary hover:shadow-none"
+        cosmic-button"
       >
         Contact
       </Button>

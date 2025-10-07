@@ -55,10 +55,7 @@ export function Navbar() {
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuTrigger
-                  className="
-                  flex items-center justify-between rounded-md py-4 px-4
-                bg-gray-100 text-black border border-blue-200 shadow-sm cursor-pointer
-                  hover:bg-transparent hover:text-primary hover:shadow-none"
+                  className="bg-primary border border-indigo-600 hover:shadow-2xl transition-shadow duration-300 cursor-pointer hover:bg-indigo-600 hover:scale-105 active:scale-95"
                   aria-label="Projects"
                 >
                   Projects
@@ -66,7 +63,7 @@ export function Navbar() {
                 <NavigationMenuContent>
                   <NavigationMenuLink
                     asChild
-                    className="text-primary rounded py-2 hover:bg-gray-50"
+                    className="text-white rounded py-2 bg-primary outline-none"
                   >
                     <Link to="/projects" aria-label="Projects">
                       Projects

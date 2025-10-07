@@ -17,7 +17,7 @@ export function InfoTabs() {
       <div
         role="tablist"
         aria-label="Info tabs"
-        className="flex space-x-2 border-b border-blue-200"
+        className="flex space-x-2 border-b border-primary"
       >
         {tabs.map((tab) => (
           <button
@@ -27,8 +27,8 @@ export function InfoTabs() {
             aria-selected={activeTab === tab}
             aria-controls={`panel-${tab}`}
             onClick={() => toggleTab(tab)}
-            className={`p-4 rounded-t cursor-pointer hover:bg-blue-50 transition px-6
-              ${activeTab === tab ? "border-b-2 border-blue-500" : ""}`}
+            className={`p-4 rounded-t cursor-pointer hover:border-2 text-primary transition px-6
+              ${activeTab === tab ? "border-b-2 border-primary" : ""}`}
           >
             {tab.charAt(0).toUpperCase() + tab.slice(1)}
           </button>
