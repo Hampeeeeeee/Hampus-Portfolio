@@ -1,6 +1,7 @@
 // import { GritAcademyBadge } from "@/badges/GritAcademyBadge";
 import { ArrowDown } from "lucide-react";
 import { AboutSection } from "./AboutSection";
+import { SkillCarousel } from "./SkillCarousel";
 
 export function HeroSection() {
   return (
@@ -36,6 +37,7 @@ export function HeroSection() {
         </div>
       </section>
       <AboutSection />
+      <SkillCarousel />
     </>
   );
 }

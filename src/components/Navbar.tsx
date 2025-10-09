@@ -55,7 +55,7 @@ export function Navbar() {
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuTrigger
-                  className="bg-primary border border-indigo-600 hover:shadow-2xl transition-shadow duration-300 cursor-pointer hover:bg-indigo-600 hover:scale-105 active:scale-95"
+                  className="bg-primary text-primary-foreground hover:shadow-2xl transition-all duration-300 cursor-pointer hover:scale-105 active:scale-95"
                   aria-label="Projects"
                 >
                   Projects
@@ -74,7 +74,7 @@ export function Navbar() {
             </NavigationMenuList>
           </NavigationMenu>
           <MailtoButton aria-label="Contact Button" />
-          <span className="flex gap-2 justify-between">
+          <span className="flex space-x-2">
             <GitHubBadge aria-label="Link to GitHub Profile" />
             <LinkedInBadge aria-label="Link to LinkedIn Profile" />
             <ThemeToggle />

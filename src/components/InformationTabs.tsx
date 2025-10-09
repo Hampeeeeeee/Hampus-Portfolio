@@ -27,8 +27,8 @@ export function InfoTabs() {
             aria-selected={activeTab === tab}
             aria-controls={`panel-${tab}`}
             onClick={() => toggleTab(tab)}
-            className={`p-4 rounded-t cursor-pointer hover:border-2 text-primary transition px-6
-              ${activeTab === tab ? "border-b-2 border-primary" : ""}`}
+            className={`p-4 rounded-t cursor-pointer hover:bg-primary/20 text-primary transition px-6
+              ${activeTab === tab ? "bg-primary/20" : ""}`}
           >
             {tab.charAt(0).toUpperCase() + tab.slice(1)}
           </button>
