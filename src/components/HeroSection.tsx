@@ -24,9 +24,9 @@ export function HeroSection() {
               </span>
             </h1>
 
-            <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-              I'm a frontend web developer student looking to create clean and
-              resposive web applications using modern technologies.
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3">
+              I'm a junior frontend web developer looking to create clean and
+              responsive web applications using modern technologies.
             </p>
 
             <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">

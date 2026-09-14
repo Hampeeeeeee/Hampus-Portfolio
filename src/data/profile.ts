@@ -26,7 +26,7 @@ export const profile = {
     {name: "JavaScript", link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript", icon: SiJavascript },
     {name: "TypeScript", link: "https://www.typescriptlang.org/", icon: SiTypescript },
     {name: "React", link: "https://reactjs.org/", icon: SiReact },
-    {name: "Agile Project Management", link: "https://www.atlassian.com/agile/project-management", icon: FaProjectDiagram },
+    {name: "APM", link: "https://www.atlassian.com/agile/project-management", icon: FaProjectDiagram },
     {name: "mySQL", link: "https://www.mysql.com/", icon: SiMysql },
     {name: "GitHub", link: "https://github.com/", icon: SiGithub },
     {name: "Vite", link: "https://vitejs.dev/", icon: SiVite },

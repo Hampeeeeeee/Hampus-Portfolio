@@ -47,7 +47,7 @@ export function InfoTabs() {
         role="tabpanel"
         id="panel-projects"
         aria-labelledby="tab-projects"
-        hidden={activeTab !== "projects"}
+        hidden={activeTab !== "projects"} 
       >
         {activeTab === "projects" && <ProjectsTab />}
       </div>
