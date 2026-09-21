@@ -6,7 +6,7 @@ export function MailtoButton() {
       <Button
         variant="default"
         className="
-        cosmic-button"
+        cosmic-button, cursor-pointer"
       >
         Contact
       </Button>

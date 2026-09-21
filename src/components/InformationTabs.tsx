@@ -1,9 +1,9 @@
 import { useState } from "react";
 import AboutTab from "./tabs/AboutTab";
 import ContactTab from "./tabs/ContactTab";
-import ProjectsTab from "./tabs/ProjectsTab"
+//import ProjectsTab from "./tabs/ProjectsTab"
 
-const tabs = ["about", "projects", "contact"];
+const tabs = ["about", "contact"];
 
 export function InfoTabs() {
   const [activeTab, setActiveTab] = useState<string>("about");
@@ -43,14 +43,14 @@ export function InfoTabs() {
       >
         {activeTab === "about" && <AboutTab />}
       </div>
-      <div
+      {/* <div
         role="tabpanel"
         id="panel-projects"
         aria-labelledby="tab-projects"
         hidden={activeTab !== "projects"} 
       >
         {activeTab === "projects" && <ProjectsTab />}
-      </div>
+      </div> */}
       <div
         role="tabpanel"
         id="panel-contact"

@@ -1,15 +1,18 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router";
 
 export function ProjectButton() {
     return (
-        <a href="/projects">
+        <Link to="/projects">
             <Button
                 variant="default"
                 className="
-                cosmic-button"
+                cosmic-button,
+                cursor-pointer
+                "
                 >
                 Projects
                 </Button>
-        </a>
+        </Link>
     );
 }

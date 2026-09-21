@@ -21,7 +21,7 @@ export default function ProjectTab() {
                    rel="noopener noreferrer"
                    className="text-blue-500 underline hover:trext-blue-700 mt-1 inline-block py-4"   
                    >
-                    View Project - GitHub
+                    View Project
                 </a>
             </div>
         ))}

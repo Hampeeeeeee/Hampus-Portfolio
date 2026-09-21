@@ -14,6 +14,15 @@ import {
 } from "react-icons/si";
 import { FaProjectDiagram } from "react-icons/fa";
 
+export interface Project {
+  id: string;
+  title: string;
+  description: string;
+  url: string;
+  img: string;
+  stack?: string[];
+}
+
 export const profile = {
   name: "Hampus Svensson",
   role: "Frontend Web Developer",
@@ -36,9 +45,10 @@ export const profile = {
     {name: "ArangoDB", link: "https://www.arangodb.com/", icon: SiArangodb},
   ],
   projects: [
-    { title: "User Cards", description: "Creating user cards using API", url: "https://github.com/Hampeeeeeee/JS3-UserCards-Uppgift", img: "./UserCard-SS.png" },
-    { title: "Quiz App", description: "Quiz App in React", url: "https://github.com/Hampeeeeeee/JS3-React-QuizApp", img: "./QuizApp-SS.png" },
-  ],
+    { id: "travel-app", title: "Travel App with Flag Quiz", description: "Flag quiz app, made in React.", url: "https://flagged-app.vercel.app/flagged", img: "./TravelApp-SS.png", stack: ["React", "TypeScript", "TailwindCSS"] },
+    { id: "user-cards", title: "User Cards", description: "Creating user cards using API", url: "https://github.com/Hampeeeeeee/JS3-UserCards-Uppgift", img: "./UserCard-SS.png", stack: ["HTML", "CSS", "JavaScript"] },
+    { id: "quiz-app", title: "Quiz App", description: "Quiz App in React", url: "https://github.com/Hampeeeeeee/JS3-React-QuizApp", img: "./QuizApp-SS.png", stack: ["React", "TypeScript", "TailwindCSS"] },
+  ] satisfies Project[],
   contact: {
     email: "hampus_svensson99@hotmail.com",
     location: "Trelleborg/Malmö, Sweden",
