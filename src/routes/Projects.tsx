@@ -84,6 +84,9 @@ export default function Projects() {
               })}
             </div>
           </div>
+            <h1 className="mb-10 text-3xl font-semibold text-foreground">
+              Have a look at my GitHub for more projects: <a href="https://github.com/Hampeeeeeee" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-4">GitHub</a>
+            </h1>
         </main>
       </div>
     </>
