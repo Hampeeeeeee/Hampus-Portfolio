@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Navbar } from "../components/Navbar";
 import { StarBackground } from "../components/StarBackground";
-import { profile } from "@/data/profile";
+import { profile, techIcons } from "@/data/profile";
 import type { Project } from "@/data/profile";
 
 export default function Projects() {
@@ -23,7 +23,10 @@ export default function Projects() {
                 const isOpen = openId === project.id;
 
                 return (
-                  <div key={project.id} className="py-2 hover:border border-primary/20 hover:bg-primary/10 rounded-lg p-4">
+                  <div
+                    key={project.id}
+                    className="py-2 hover:border border-primary/20 hover:bg-primary/10 rounded-lg p-4"
+                  >
                     <button
                       onClick={() => setOpenId(isOpen ? null : project.id)}
                       aria-expanded={isOpen}
@@ -59,14 +62,30 @@ export default function Projects() {
                         </p>
                         {project.stack && (
                           <div className="my-3 flex flex-wrap gap-2">
-                            {project.stack.map((tech) => (
-                              <span
-                                key={tech}
-                                className="rounded-full border border-border/60 px-2.5 py-0.5 text-xs text-muted-foreground"
-                              >
-                                {tech}
-                              </span>
-                            ))}
+                            {project.stack.map((tech) => {
+                              const Icon = techIcons[tech];
+
+                              return Icon ? (
+                                <span
+                                  key={tech}
+                                  title={tech}
+                                  className="flex items-center justify-center rounded-full border border-border/60 p-1.5 text-muted-foreground bg-primary"
+                                >
+                                  <Icon
+                                    className="h-4 w-4"
+                                    aria-hidden="true"
+                                  />
+                                  <span className="sr-only">{tech}</span>
+                                </span>
+                              ) : (
+                                <span
+                                  key={tech}
+                                  className="rounded-full border border-border/60 px-2.5 py-0.5 text-xs text-muted-foreground"
+                                >
+                                  {tech}
+                                </span>
+                              );
+                            })}
                           </div>
                         )}
                         <a
@@ -84,9 +103,17 @@ export default function Projects() {
               })}
             </div>
           </div>
-            <h1 className="mb-10 text-3xl font-semibold text-foreground">
-              Have a look at my GitHub for more projects: <a href="https://github.com/Hampeeeeeee" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-4">GitHub</a>
-            </h1>
+          <h1 className="mb-10 text-3xl font-semibold text-foreground">
+            Have a look at my GitHub for more projects:{" "}
+            <a
+              href="https://github.com/Hampeeeeeee"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary underline underline-offset-4"
+            >
+              GitHub
+            </a>
+          </h1>
         </main>
       </div>
     </>

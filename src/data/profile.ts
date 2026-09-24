@@ -13,6 +13,7 @@ import {
   SiArangodb,
 } from "react-icons/si";
 import { FaProjectDiagram } from "react-icons/fa";
+import type { IconType } from "react-icons";
 
 export interface Project {
   id: string;
@@ -22,6 +23,21 @@ export interface Project {
   img: string;
   stack?: string[];
 }
+
+export const techIcons: Record<string, IconType> = {
+  HTML: SiHtml5,
+  CSS: SiCss3,
+  JavaScript: SiJavascript,
+  TypeScript: SiTypescript,
+  React: SiReact,
+  TailwindCSS: SiTailwindcss,
+  Vite: SiVite,
+  Angular: SiAngular,
+  GraphQL: SiGraphql,
+  ArangoDB: SiArangodb,
+  mySQL: SiMysql,
+}
+
 
 export const profile = {
   name: "Hampus Svensson",
@@ -45,7 +61,7 @@ export const profile = {
     {name: "ArangoDB", link: "https://www.arangodb.com/", icon: SiArangodb},
   ],
   projects: [
-    { id: "travel-app", title: "Travel App with Flag Quiz", description: "Flag quiz app, made in React.", url: "https://flagged-app.vercel.app/flagged", img: "./TravelApp-SS.png", stack: ["React", "TypeScript", "TailwindCSS"] },
+    { id: "travel-app", title: "Travel App with Flag Quiz", description: "Flag quiz app, made in React.", url: "https://flagged-app.vercel.app/flagged", img: "./TravelApp-SS.png", stack: ["React", "TypeScript", "TailwindCSS", "Vite"] },
     { id: "user-cards", title: "User Cards", description: "Creating user cards using API", url: "https://github.com/Hampeeeeeee/JS3-UserCards-Uppgift", img: "./UserCard-SS.png", stack: ["HTML", "CSS", "JavaScript"] },
     { id: "quiz-app", title: "Quiz App", description: "Quiz App in React", url: "https://github.com/Hampeeeeeee/JS3-React-QuizApp", img: "./QuizApp-SS.png", stack: ["React", "TypeScript", "TailwindCSS"] },
   ] satisfies Project[],
