@@ -1,73 +1,64 @@
-# React + TypeScript + Vite
+# Hampus Svensson – Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hi, I'm Hampus, a software developer who likes building things people actually enjoy using. 
 
-Currently, two official plugins are available:
+This is my portfolio: a place to show what I've made, what I work with, and a bit about me.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Live site: https://portfolio-of-hampus.vercel.app/
 
-## React Compiler
+<img width="1368" height="740" alt="image" src="https://github.com/user-attachments/assets/812ee3d9-6117-4878-98a3-063b8eb5aab9" />
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# What's on the site?
 
-## Expanding the ESLint configuration
+About: a short intro to who I am and what I care about
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Skills: the tools I use, each linking to its docs
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Projects: screenshots, a short description, and the tech behind each one shown as icons
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+# Built with:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+React + TypeScript
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Vite
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Tailwind CSS
+#
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+All the content (my bio, skills and projects) lives in a single profile object, so updating the site is mostly a matter of editing data rather than touching markup.
+
+**Running it locally:**
+
+bash
+
+git clone [your repo url]
+
+cd [your folder name]
+
+npm install
+
+npm run dev
+
+Then open the local address Vite prints in your terminal.
+
+**Adding a project:**
+
+Add a new entry to the projects array in the profile file:
+
+Each name in stack is looked up in the techIcons map. If you use a technology that isn't there yet, add its icon to the map, otherwise it just shows up as a text label.
+
+# Some of my projects
+
+Travel App with Flag Quiz: a flag quiz app built in React
+
+User Cards: user cards generated from an API
+
+Quiz App: a quiz app in React
+
+# Get in touch
+
+LinkedIn: https://www.linkedin.com/in/hampus-svensson-3a3505329/
+
+GitHub: https://github.com/Hampeeeeeee
+
+Email: hampus_svensson99@hotmail.com
